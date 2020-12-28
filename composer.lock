@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "b6660c363a56ff26f1c6f00b5012ce21",
+    "content-hash": "36847ad4445ceda96406845f9527d8da",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -1055,21 +1055,21 @@
         },
         {
             "name": "drupal/core-vendor-hardening",
-            "version": "8.9.11",
+            "version": "9.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupal/core-vendor-hardening.git",
-                "reference": "7c2922e60df83ce1a062626833d7f172ff0f268a"
+                "reference": "2d384e7d01bcba7706baa65ed155f652a7f29e31"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drupal/core-vendor-hardening/zipball/7c2922e60df83ce1a062626833d7f172ff0f268a",
-                "reference": "7c2922e60df83ce1a062626833d7f172ff0f268a",
+                "url": "https://api.github.com/repos/drupal/core-vendor-hardening/zipball/2d384e7d01bcba7706baa65ed155f652a7f29e31",
+                "reference": "2d384e7d01bcba7706baa65ed155f652a7f29e31",
                 "shasum": ""
             },
             "require": {
                 "composer-plugin-api": "^1.1 || ^2",
-                "php": ">=7.0.8"
+                "php": ">=7.3.0"
             },
             "type": "composer-plugin",
             "extra": {
@@ -1080,6 +1080,7 @@
                     "Drupal\\Composer\\Plugin\\VendorHardening\\": "."
                 }
             },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "GPL-2.0-or-later"
             ],
@@ -1087,7 +1088,8 @@
             "homepage": "https://www.drupal.org/project/drupal",
             "keywords": [
                 "drupal"
-            ]
+            ],
+            "time": "2020-05-05T12:56:43+00:00"
         },
         {
             "name": "drupal/ctools",
