@@ -903,22 +903,22 @@
     },
     {
         "name": "drupal/core-composer-scaffold",
-        "version": "8.9.11",
-        "version_normalized": "8.9.11.0",
+        "version": "9.0.0",
+        "version_normalized": "9.0.0.0",
         "source": {
             "type": "git",
             "url": "https://github.com/drupal/core-composer-scaffold.git",
-            "reference": "c902d07cb49ef73777e2b33a39e54c2861a8c81d"
+            "reference": "fb112a238577589311395099324ddec7fb4176d7"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/drupal/core-composer-scaffold/zipball/c902d07cb49ef73777e2b33a39e54c2861a8c81d",
-            "reference": "c902d07cb49ef73777e2b33a39e54c2861a8c81d",
+            "url": "https://api.github.com/repos/drupal/core-composer-scaffold/zipball/fb112a238577589311395099324ddec7fb4176d7",
+            "reference": "fb112a238577589311395099324ddec7fb4176d7",
             "shasum": ""
         },
         "require": {
             "composer-plugin-api": "^1 || ^2",
-            "php": ">=7.0.8"
+            "php": ">=7.3.0"
         },
         "conflict": {
             "drupal-composer/drupal-scaffold": "*"
@@ -926,6 +926,7 @@
         "require-dev": {
             "composer/composer": "^1.8@stable"
         },
+        "time": "2020-05-29T11:32:13+00:00",
         "type": "composer-plugin",
         "extra": {
             "class": "Drupal\\Composer\\Plugin\\Scaffold\\Plugin",
@@ -939,6 +940,7 @@
                 "Drupal\\Composer\\Plugin\\Scaffold\\": ""
             }
         },
+        "notification-url": "https://packagist.org/downloads/",
         "license": [
             "GPL-2.0-or-later"
         ],
