@@ -21,7 +21,7 @@
         "drupal/core-recommended": "8.9.10",
         "drupal/core-vendor-hardening": "^8.8",
         "drupal/pathauto": "1.8.0",
-        "drupal/token": "1.7"
+        "drupal/token": "1.8.0"
     },
     "conflict": {
         "drupal/drupal": "*"
