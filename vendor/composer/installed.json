@@ -55,17 +55,17 @@
     },
     {
         "name": "composer/installers",
-        "version": "v1.9.0",
-        "version_normalized": "1.9.0.0",
+        "version": "v1.10.0",
+        "version_normalized": "1.10.0.0",
         "source": {
             "type": "git",
             "url": "https://github.com/composer/installers.git",
-            "reference": "b93bcf0fa1fccb0b7d176b0967d969691cd74cca"
+            "reference": "1a0357fccad9d1cc1ea0c9a05b8847fbccccb78d"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/composer/installers/zipball/b93bcf0fa1fccb0b7d176b0967d969691cd74cca",
-            "reference": "b93bcf0fa1fccb0b7d176b0967d969691cd74cca",
+            "url": "https://api.github.com/repos/composer/installers/zipball/1a0357fccad9d1cc1ea0c9a05b8847fbccccb78d",
+            "reference": "1a0357fccad9d1cc1ea0c9a05b8847fbccccb78d",
             "shasum": ""
         },
         "require": {
@@ -76,18 +76,19 @@
             "shama/baton": "*"
         },
         "require-dev": {
-            "composer/composer": "1.6.* || 2.0.*@dev",
-            "composer/semver": "1.0.* || 2.0.*@dev",
-            "phpunit/phpunit": "^4.8.36",
-            "sebastian/comparator": "^1.2.4",
+            "composer/composer": "1.6.* || ^2.0",
+            "composer/semver": "^1 || ^3",
+            "phpstan/phpstan": "^0.12.55",
+            "phpstan/phpstan-phpunit": "^0.12.16",
+            "symfony/phpunit-bridge": "^4.2 || ^5",
             "symfony/process": "^2.3"
         },
-        "time": "2020-04-07T06:57:05+00:00",
+        "time": "2021-01-14T11:07:16+00:00",
         "type": "composer-plugin",
         "extra": {
             "class": "Composer\\Installers\\Plugin",
             "branch-alias": {
-                "dev-master": "1.0-dev"
+                "dev-main": "1.x-dev"
             }
         },
         "installation-source": "dist",
@@ -126,6 +127,7 @@
             "Porto",
             "RadPHP",
             "SMF",
+            "Starbug",
             "Thelia",
             "Whmcs",
             "WolfCMS",
@@ -166,6 +168,7 @@
             "phpbb",
             "piwik",
             "ppi",
+            "processwire",
             "puppet",
             "pxcms",
             "reindex",
@@ -180,6 +183,20 @@
             "yawik",
             "zend",
             "zikula"
+        ],
+        "funding": [
+            {
+                "url": "https://packagist.com",
+                "type": "custom"
+            },
+            {
+                "url": "https://github.com/composer",
+                "type": "github"
+            },
+            {
+                "url": "https://tidelift.com/funding/github/packagist/composer/composer",
+                "type": "tidelift"
+            }
         ]
     },
     {
@@ -664,18 +681,18 @@
     },
     {
         "name": "drupal/admin_toolbar",
-        "version": "1.27.0",
-        "version_normalized": "1.27.0.0",
+        "version": "2.0.0",
+        "version_normalized": "2.0.0.0",
         "source": {
             "type": "git",
             "url": "https://git.drupalcode.org/project/admin_toolbar.git",
-            "reference": "8.x-1.27"
+            "reference": "8.x-2.0"
         },
         "dist": {
             "type": "zip",
-            "url": "https://ftp.drupal.org/files/projects/admin_toolbar-8.x-1.27.zip",
-            "reference": "8.x-1.27",
-            "shasum": "fed1fbbdf8f805b1da63d73e7e2c54750f354d61"
+            "url": "https://ftp.drupal.org/files/projects/admin_toolbar-8.x-2.0.zip",
+            "reference": "8.x-2.0",
+            "shasum": "568de63dbaa8046a82d327dbd0b892ab79fb87aa"
         },
         "require": {
             "drupal/core": "^8"
@@ -683,8 +700,8 @@
         "type": "drupal-module",
         "extra": {
             "drupal": {
-                "version": "8.x-1.27",
-                "datestamp": "1558553350",
+                "version": "8.x-2.0",
+                "datestamp": "1573751237",
                 "security-coverage": {
                     "status": "covered",
                     "message": "Covered by Drupal's security advisory policy"
@@ -977,8 +994,8 @@
     },
     {
         "name": "drupal/core-composer-scaffold",
-        "version": "8.9.11",
-        "version_normalized": "8.9.11.0",
+        "version": "8.9.13",
+        "version_normalized": "8.9.13.0",
         "source": {
             "type": "git",
             "url": "https://github.com/drupal/core-composer-scaffold.git",
@@ -1000,6 +1017,7 @@
         "require-dev": {
             "composer/composer": "^1.8@stable"
         },
+        "time": "2020-08-07T22:30:30+00:00",
         "type": "composer-plugin",
         "extra": {
             "class": "Drupal\\Composer\\Plugin\\Scaffold\\Plugin",
@@ -1013,6 +1031,7 @@
                 "Drupal\\Composer\\Plugin\\Scaffold\\": ""
             }
         },
+        "notification-url": "https://packagist.org/downloads/",
         "license": [
             "GPL-2.0-or-later"
         ],
@@ -1024,8 +1043,8 @@
     },
     {
         "name": "drupal/core-project-message",
-        "version": "8.9.11",
-        "version_normalized": "8.9.11.0",
+        "version": "8.9.13",
+        "version_normalized": "8.9.13.0",
         "source": {
             "type": "git",
             "url": "https://github.com/drupal/core-project-message.git",
@@ -1041,6 +1060,7 @@
             "composer-plugin-api": "^1.1 || ^2",
             "php": ">=7.0.8"
         },
+        "time": "2020-08-02T22:04:49+00:00",
         "type": "composer-plugin",
         "extra": {
             "class": "Drupal\\Composer\\Plugin\\ProjectMessage\\MessagePlugin"
@@ -1051,6 +1071,7 @@
                 "Drupal\\Composer\\Plugin\\ProjectMessage\\": "."
             }
         },
+        "notification-url": "https://packagist.org/downloads/",
         "license": [
             "GPL-2.0-or-later"
         ],
@@ -1145,8 +1166,8 @@
     },
     {
         "name": "drupal/core-vendor-hardening",
-        "version": "8.9.11",
-        "version_normalized": "8.9.11.0",
+        "version": "8.9.13",
+        "version_normalized": "8.9.13.0",
         "source": {
             "type": "git",
             "url": "https://github.com/drupal/core-vendor-hardening.git",
@@ -1162,6 +1183,7 @@
             "composer-plugin-api": "^1.1 || ^2",
             "php": ">=7.0.8"
         },
+        "time": "2020-08-02T22:04:49+00:00",
         "type": "composer-plugin",
         "extra": {
             "class": "Drupal\\Composer\\Plugin\\VendorHardening\\VendorHardeningPlugin"
@@ -1172,6 +1194,7 @@
                 "Drupal\\Composer\\Plugin\\VendorHardening\\": "."
             }
         },
+        "notification-url": "https://packagist.org/downloads/",
         "license": [
             "GPL-2.0-or-later"
         ],
@@ -1275,18 +1298,18 @@
     },
     {
         "name": "drupal/pathauto",
-        "version": "1.7.0",
-        "version_normalized": "1.7.0.0",
+        "version": "1.8.0",
+        "version_normalized": "1.8.0.0",
         "source": {
             "type": "git",
             "url": "https://git.drupalcode.org/project/pathauto.git",
-            "reference": "8.x-1.7"
+            "reference": "8.x-1.8"
         },
         "dist": {
             "type": "zip",
-            "url": "https://ftp.drupal.org/files/projects/pathauto-8.x-1.7.zip",
-            "reference": "8.x-1.7",
-            "shasum": "39078c9c3755431fb5e69e103909fd42f531ef3c"
+            "url": "https://ftp.drupal.org/files/projects/pathauto-8.x-1.8.zip",
+            "reference": "8.x-1.8",
+            "shasum": "ede3216abb9c4f77709338d9147334c595046329"
         },
         "require": {
             "drupal/core": "^8.8 || ^9",
@@ -1299,8 +1322,8 @@
         "type": "drupal-module",
         "extra": {
             "drupal": {
-                "version": "8.x-1.7",
-                "datestamp": "1588002767",
+                "version": "8.x-1.8",
+                "datestamp": "1588103046",
                 "security-coverage": {
                     "status": "covered",
                     "message": "Covered by Drupal's security advisory policy"
@@ -1315,7 +1338,7 @@
         "installation-source": "dist",
         "notification-url": "https://packages.drupal.org/8/downloads",
         "license": [
-            "GPL-2.0+"
+            "GPL-2.0-or-later"
         ],
         "authors": [
             {
@@ -1345,18 +1368,18 @@
     },
     {
         "name": "drupal/simple_sitemap",
-        "version": "2.10.0",
-        "version_normalized": "2.10.0.0",
+        "version": "2.11.0",
+        "version_normalized": "2.11.0.0",
         "source": {
             "type": "git",
             "url": "https://git.drupalcode.org/project/simple_sitemap.git",
-            "reference": "8.x-2.10"
+            "reference": "8.x-2.11"
         },
         "dist": {
             "type": "zip",
-            "url": "https://ftp.drupal.org/files/projects/simple_sitemap-8.x-2.10.zip",
-            "reference": "8.x-2.10",
-            "shasum": "cc96a9fb7d9a6eb60ff6ce7a335c9a4065ad2340"
+            "url": "https://ftp.drupal.org/files/projects/simple_sitemap-8.x-2.11.zip",
+            "reference": "8.x-2.11",
+            "shasum": "d4b5f24c90d0636acd2c345eca566891194a7d0a"
         },
         "require": {
             "drupal/core": "~8.0"
@@ -1364,11 +1387,16 @@
         "type": "drupal-module",
         "extra": {
             "drupal": {
-                "version": "8.x-2.10",
-                "datestamp": "1513114985",
+                "version": "8.x-2.11",
+                "datestamp": "1523202480",
                 "security-coverage": {
                     "status": "covered",
                     "message": "Covered by Drupal's security advisory policy"
+                }
+            },
+            "drush": {
+                "services": {
+                    "drush.services.yml": "^9"
                 }
             }
         },
@@ -1400,27 +1428,27 @@
     },
     {
         "name": "drupal/token",
-        "version": "1.7.0",
-        "version_normalized": "1.7.0.0",
+        "version": "1.8.0",
+        "version_normalized": "1.8.0.0",
         "source": {
             "type": "git",
             "url": "https://git.drupalcode.org/project/token.git",
-            "reference": "8.x-1.7"
+            "reference": "8.x-1.8"
         },
         "dist": {
             "type": "zip",
-            "url": "https://ftp.drupal.org/files/projects/token-8.x-1.7.zip",
-            "reference": "8.x-1.7",
-            "shasum": "c7e3a3757282e4c94e3c1fff08d01e22155cb853"
+            "url": "https://ftp.drupal.org/files/projects/token-8.x-1.8.zip",
+            "reference": "8.x-1.8",
+            "shasum": "f8e3b8f897817969324d88019438066b533bfe42"
         },
         "require": {
-            "drupal/core": "^8.7.7 || ^9"
+            "drupal/core": "^8.8 || ^9"
         },
         "type": "drupal-module",
         "extra": {
             "drupal": {
-                "version": "8.x-1.7",
-                "datestamp": "1589314266",
+                "version": "8.x-1.8",
+                "datestamp": "1607552423",
                 "security-coverage": {
                     "status": "covered",
                     "message": "Covered by Drupal's security advisory policy"
@@ -1435,7 +1463,7 @@
         "installation-source": "dist",
         "notification-url": "https://packages.drupal.org/8/downloads",
         "license": [
-            "GPL-2.0+"
+            "GPL-2.0-or-later"
         ],
         "authors": [
             {
