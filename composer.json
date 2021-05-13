@@ -17,6 +17,7 @@
     "require": {
         "composer/installers": "^1.2",
         "drupal/admin_toolbar": "^1.25",
+        "drupal/calendar": "1.x-dev#cd1936c",
         "drupal/core-composer-scaffold": "^8.8",
         "drupal/core-project-message": "^8.8",
         "drupal/core-recommended": "8.9.10",
