@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "14a2b60050479e972fb48e78b303e519",
+    "content-hash": "20d66d085475426e473b32799ef01968",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -754,7 +754,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/calendar.git",
-                "reference": "cced6c6"
+                "reference": "87b00adc7103da2d720c836a2b6fe4a0c6a318df"
             },
             "require": {
                 "drupal/core": "^8 || ^9"
@@ -808,7 +808,7 @@
             "support": {
                 "source": "https://git.drupalcode.org/project/calendar"
             },
-            "time": "2020-09-11T14:00:15+00:00"
+            "time": "2021-05-16T11:50:07+00:00"
         },
         {
             "name": "drupal/core",
